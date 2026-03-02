@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Menu — Demo</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#00213a">
+  <!-- iOS meta -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="images/icons/apple-touch-180.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-top">
+      <div class="brand-row">
+        <img src="images/logo.svg" alt="Maryamas Chinese Restaurant" class="site-logo site-logo--large">
+        <nav class="top-nav" aria-label="Main navigation">
+          <a href="#">Menu</a>
+          <a href="#">Location &amp; Hours</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn-outline" href="order.html">Order Online</a>
+        </div>
+      </div>
+
+      <div class="hero">
+        <img src="images/hibachi-fried-rice.jpeg" alt="Featured dish" class="hero-img">
+        <!-- Signature badge overlays the hero image -->
+        <figure class="signature-badge" aria-hidden="false">
+          <img src="images/spicy-manchurian-noodles.jpeg" alt="Signature: Spicy Manchurian Noodles">
+          <figcaption>
+            <strong>Signature Dish</strong>
+            <div class="sig-name">Spicy Manchurian Noodles</div>
+            <div class="sig-price">KSh 1,500</div>
+          </figcaption>
+        </figure>
+
+        <div class="hero-cta">
+          <h2>Chinese Night at Maryama</h2>
+          <p class="hero-sub">Bold flavours, modern vibe — explore our menu below.</p>
+          <a class="btn-primary" href="#menu-grid">See Menu</a>
+        </div>
+      </div>
+
+      <div class="controls">
+        <input id="search" type="search" placeholder="Search dishes..." aria-label="Search dishes">
+        <div id="categories" class="categories"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Info: location, hours, contact, order -->
+  <section id="info" class="container info-bar">
+    <div class="info-col">
+      <h3>Location</h3>
+      <p>Kilimani, Nairobi</p>
+      <!-- Google Maps embed (replace the src with your real coordinates/place id if desired) -->
+      <iframe class="map-frame" src="https://www.google.com/maps?q=Kilimani+Nairobi&output=embed" width="100%" height="140" style="border:0;border-radius:8px;margin-top:0.5rem;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="info-col">
+      <h3>Hours</h3>
+      <p>Mon–Thu: 11:00 – 22:00<br>Fri–Sun: 11:00 – 00:00</p>
+    </div>
+    <div class="info-col">
+      <h3>Contact</h3>
+      <p>Phone: <a href="tel:0759900064">0759900064</a><br>Email: <a href="mailto:order@maryamas.example">order@maryamas.example</a></p>
+    </div>
+    <div class="info-col actions">
+      <h3>Order</h3>
+      <p><a class="btn-primary" href="order.html">Order Online</a></p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="menu-grid" class="menu-grid" aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Made with ♥ — Demo menu website</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
